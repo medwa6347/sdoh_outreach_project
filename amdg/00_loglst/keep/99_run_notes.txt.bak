@@ -1,0 +1,16 @@
+p100: First to SF for review
+p101:	FINAL CLIENT-FACING, sent to SF 8/15
+p102: FINAL CLIENT-FACING, filtering "Positive Attribute" refferal types per SF, sent 8/18
+p103:	FINAL CLIENT-FACING, filtering "Positive Attribute" refferal types per SF, corrected unique patient counts, sent 8/19
+p104: FINAL CLIENT-FACING, unfiltered, ''
+p105: FINAL CLIENT-FACING, filtering "Positive Attribute" refferal types per SF, updated data through July
+p106: FINAL CLIENT-FACING, '', updated 0002 codeset:
+	 -modified sdoh intake script to clean common name data on input vs. manually cleaning the .txt sdoh files
+	 -added common name detail display option for SF review
+	 - 105/106 FINAL FOR JULY
+p107/108: FINAL FOR AUGUST
+p109/110: FINAL FOR SEPT
+p111-114: Created 0003 for cohort creation.  FINAL COHORTS FOR INA CLAIMS ANALYSIS.  111,112 "Pre Covid" 113,114 "Post Covid."  
+					Please note 113,114 labeled "Pre Covid" programatically incorrectly, manually renamed.
+
+
