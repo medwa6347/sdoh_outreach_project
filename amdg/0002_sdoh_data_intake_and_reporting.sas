@@ -1,6 +1,6 @@
  /*----------------------------------------------------------------*\
- | STANDALONE SDOH CAMPAIGN FOR XO - MERCK													|
- | PROGRAM 0002 - POST-CAMPAIGN SDOH DATA INTAKE										|
+ | STANDALONE SDOH CAMPAIGN FOR XO - MERCK							|
+ | PROGRAM 0002 - POST-CAMPAIGN SDOH DATA INTAKE					|
  | AUTHOR: MICHAEL EDWARDS 2020-08-12 AMDG                          |
  \*----------------------------------------------------------------*/													
 /**/
@@ -23,25 +23,25 @@ screen -dm -S xoa1 ./0001_xo_sdoh_shell.ksh
 %macro pim_sdoh(fn_sdoh_inp=,fn_sdoh_out=);                                                                                                                      
 	data &fn_sdoh_out.;                                                                                                                                             
 		infile "&fn_sdoh_inp." delimiter = '|' missover dsd lrecl=32767 firstobs=2;                                                                                   
-		informat mbi		                      $12.    	;                                                                                                             
-		informat srvc_dt                      yymmdd10.	;                                                                                                             
-		informat icd_code                     $7.			 	;                                                                                                             
-		informat icd_code_description         $130.    	;                                                                                                             
-		informat ref_ful											$3.      	;                                                                                                             
-		informat common_name_roll_up          $24.			;                                                                                                             
-		informat common_name_detail_display   $24.      ;                                                                                                             
-		format mbi		                       	$12.    	;                                                                                                             
-		format srvc_dt                       	yymmdd10.	;                                                                                                             
-		format icd_code                      	$7.			 	;                                                                                                             
-		format icd_code_description          	$130.    	;                                                                                                             
-		format ref_ful												$3.      	;                                                                                                             
-		format common_name_roll_up           	$24.			;                                                                                                             
-		format common_name_detail_display    	$24.      ;                                                                                                             
+		informat mbi		                  	$12.;                                                                                                             
+		informat srvc_dt                      	yymmdd10.;                                                                                                             
+		informat icd_code                     	$7.;                                                                                                             
+		informat icd_code_description         	$130.;                                                                                                             
+		informat ref_ful					  	$3.;                                                                                                             
+		informat common_name_roll_up          	$24.;                                                                                                             
+		informat common_name_detail_display   	$24.;                                                                                                             
+		format mbi		                       	$12.;                                                                                                             
+		format srvc_dt                       	yymmdd10.;                                                                                                             
+		format icd_code                      	$7.;                                                                                                             
+		format icd_code_description          	$130.;                                                                                                             
+		format ref_ful							$3.;                                                                                                             
+		format common_name_roll_up           	$24.;                                                                                                             
+		format common_name_detail_display    	$24.;                                                                                                             
 		input  mbi		                       	$   	                                                                                                                  
-		       srvc_dt                       	                                                                                                                        
+		       srvc_dt                       	                                                                                                            
 		       icd_code                      	$ 	                                                                                                                    
 		       icd_code_description          	$                                                                                                                       
-		       ref_ful												$   	                                                                                                                  
+		       ref_ful							$   	                                                                                                                  
 		       common_name_roll_up           	$		                                                                                                                    
 		       common_name_detail_display    	$                                                                                                                       
 		;                                                                                                                                                             
